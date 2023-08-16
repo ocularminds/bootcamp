@@ -1,0 +1,1 @@
+1. Write a function to calculate the Check Digit of a Card Number.(21234566780982345)
