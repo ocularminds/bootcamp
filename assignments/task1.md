@@ -9,10 +9,12 @@ Record -> List - index-> 0: firstname, 1, lastname ....cgpa
     - 2. Define a variable named students of data type Map of String, List
     - 3. In the constructor, initialise the variable students
     - 4. On top of your class add:
+    
        import java.util.List;
        import java.util.ArrayList;
        import java.util.Map;
        import java.util.HashMap;
+       
     - B. add(String firstName, String LastName, String department, String hostel, String cgpa)
         - create arraylist and add each arguements
         - add the arraylist to the map of students
