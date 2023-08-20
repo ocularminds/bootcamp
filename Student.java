@@ -3,10 +3,10 @@ import java.util.Map;
 import java.util.ArrayList;
 public class Student {
    
-    HashMap<String,List> studentrecord ;
+    Map<String,List> student ;
     
     public Student(){
-           studentrecord  = new Map<studentrecord>();
+           student = new HashMap<>();
     }
     
 }
