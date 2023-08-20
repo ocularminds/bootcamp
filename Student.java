@@ -1,7 +1,8 @@
 public class Students{
-    String[] students;
+    Map<String, List> students;
 
     public Students(){
-        Map<String, List> students = new HashMap<>();
+        students = new HashMap<>();
+        
     }
 }
