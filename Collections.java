@@ -7,23 +7,31 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class Collections {
+    String[] cities;
+    
+    public Collections(){
+        cities = new String[5];
+    }
 
     public void createArrays(){
         int[] numbers = {1, 2,3,4,5,6,7,8,9,10};
         double[] prices = new double[7]; //arrays are zero index1,4,6 = 0th, 3rd, 5th
         String[] names = {"Sola", "Festus", "Melat", "Philomena"};
-        String[] cities = new String[5];
+        
+        
         System.out.println("Default values:");
         System.out.println("Prices: "+ Arrays.toString(prices));
         System.out.println("Cities: "+ Arrays.toString(cities));
         prices[0] = 45.23;
         prices[3] = 75.00;
         prices[5] = 29.77;
+
         cities[0] = "Paris";
         cities[1] = "Lagos";
         cities[2] = "Barcelona";
         cities[3] = "Karlskrona";
         cities[4] = "London";
+
         System.out.println("\nWith new values:");
         System.out.println("Prices: "+ Arrays.toString(prices));
         System.out.println("Cities: "+ Arrays.toString(cities));
@@ -93,9 +101,18 @@ public class Collections {
         System.out.println("Country capitals: "+countryCapitals);
     }
 
-    // create student records Map having studen number as key and ArrayList as the value
+    // create student records Map having student number as key and ArrayList as the value
     // List first name, lastname, department, level, hostel, cgpa
+    // Record -> List - index-> 0: firstname, 1, lastname ....cgpa
+    // 1. Create a class named Students fileName is Students.java
+    // 2. Define avaiable named students of data type Map of String, List
+    // 3. In the constructor, initialise the variable students
+    // 4. add(String firstName, String LastName, String department, String hostel, String cgpa)
+    //      - create arraylist and add each arguements
+    //      - add the arraylist to the map of students
+
+    // Key -> studentNumber: List(record)
     // add any student record to the collection
     // getStuent(studentNumber) >> List continain the student data
-    // print(List) display a sudent data in a single line
+    // print(List) display a student data in a single line
 }
