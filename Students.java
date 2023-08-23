@@ -38,7 +38,19 @@ public class Students {
      * Print out student record in as a String.
      */
 
-    public void printStudent(List<> studentRecord) {
+    public void main(String[] args) {
+        String firstName = "Mike";
+        String lastName = "Olushola";
+        String department = "Civil engineering";
+        String level = "3rd Year";
+        String hostel = "MaryLand Hostel";
+        String cpgaRecord = "3.8pt";
+
+        List<String> studentRecord;
+        System.out.println(String.join("," studentRecord));
+
+
+
 
     }
 }
