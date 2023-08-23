@@ -20,7 +20,7 @@ Record -> List - index-> 0: firstname, 1, lastname ....cgpa
         - add the arraylist to the map of students
 
     Key -> studentNumber: List(record)
-    add any student record to the collection
-    getStuent(studentNumber) >> List continain the student data
     
-    print(List) display a student data in a single line
+    B1. getStuent(studentNumber) >> List continain the student data
+    
+    B2. print(List) display a student data in a single line
