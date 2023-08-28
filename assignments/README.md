@@ -25,7 +25,7 @@ Customer - String name, Intger id, String address, String email
 
 public class Customer {
     private String name; 
-    private Integer id;
+    private final Integer id;
     private String address;
     private String email;
     
@@ -41,3 +41,40 @@ public class Customer {
         this.id id;
     }
 }
+Polymorphism - Many, methods/functions
+
+Inheritance = Vechicle[tires:4, passengers: 2, stearing: true, speed(), reverse(), doors:2]
+              Car[doors: 2]
+              SUV[trunk, doors:4]
+
+              HumanBeing - [name, gender, eyes:2, walk(), talk(), respirate()]
+              Man[gender:MAN, private, mascline:true], woman
+
+ public class Vehicle {
+    int tires;
+    int passengers;
+    boolean stearing;
+    int doors;
+    int speed;
+    int direction;
+
+    public void accelerate(int torque){
+       this.speed = this.speed + torque;// this.speed += torque;
+    }
+
+    public void decelerate(int torque){
+       this.speed = this.speed - torque;
+    }
+
+    public void reverse(int torque){
+       this.direction -= torque;
+    }
+ }
+
+ public class Car extends Vehicle {
+    public Car(){
+        this.door = 2;
+    }
+ }
+
+

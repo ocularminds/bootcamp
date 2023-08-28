@@ -14,3 +14,41 @@ populate student records from string.
 5. Create a folder matching project[orders, uber]
    - Create Objects identified within your project's problem statement
    - Create .java class having the name name as your objects.
+
+   public class Students{
+
+     Map<String, List<String>> students;
+
+     public void add(String number, String firstName, String lastName .....){
+        List<String> record = new ArrayList<>();
+        record.add(firstName);
+        record.add(lastName);
+        ...
+        students.put(number, record);
+     }
+
+    // Given a student number, fecth student record
+    public List<String> get(String number){
+       List<String> record = students.get(number);
+       return record;
+    }
+    
+    public void print(List<String> record){
+       String firstName = record.get(0);
+       String lastName = record.get(1);
+       ...
+       System.out.println("First Name: "+ firstName );
+       ...
+    }
+
+    public static void main(String[] args){
+        Students students = new Students();
+        students.add("MNS970","Baba", "Festi", "Engineering", "4.75");
+        students.add("MNS051","Segun", "Babra", "Computer Science", "5.00");
+        ...
+        String number = "MNS051";
+        List<String> student = students.get(number);
+        students.print(student);
+
+    }
+}

@@ -31,6 +31,7 @@
    - Containers
    - Cloud
    - Server/Serverless
+   - Embedded devices
 10. Testing
    - Unit
    - Integration
@@ -45,4 +46,5 @@
    - Opportunities
    - Working remotely
    - Time management
+   - SCRUM(Standup, Sprint, Sprint Review)
 14. Collaboration

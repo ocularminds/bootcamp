@@ -25,12 +25,13 @@ public class Variables {
     // method call or execution echo();
 
     public static void main(String[] args){
-        int tires = 8;
+       int tires = 8;
        String nameOfSchool = "Cecil Petros School";
        System.out.println("Welcome to Bootcamp");
        System.out.println(" ");
        System.out.println("int Number of Tire: "+ tires);
        System.out.println("String name of school: "+ nameOfSchool);
+       
        Variables variables = new Variables();
        variables.echo("Bootcamp Variables");
        variables.println("Bootcamp Variables");
