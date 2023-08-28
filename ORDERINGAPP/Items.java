@@ -1,8 +1,8 @@
 package ORDERINGAPP;
 
 public class Items {
-    String name;
-    String category;
+    private String name;
+    private String category;
 
     public String getName() {
         return name;

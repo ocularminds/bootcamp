@@ -3,9 +3,9 @@ package ORDERINGAPP;
 import java.sql.Date;
 
 public class Order {
-    String costumerId;
-    int orderQuntity;
-    Date date;
+    private String costumerId;
+    private int orderQuntity;
+    private Date date;
     private Integer orderQuantity;
 
     public String getCustomerId() {
