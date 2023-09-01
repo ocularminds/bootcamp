@@ -27,9 +27,8 @@ public class Students{
     List<String> studentInfo = new ArrayList<String>();
      students.put(studentNumber, null);
      return studentInfo;
-
-  }
-    public void populate(){
+   }
+    public void populate(String firsName,){
     String data = "MTN0001, Festus, Banki, Engineering, 4.32 | MTN0002, Damani, Dada, Sociology, 2.32  | MTN0003, Kuski, Romeo, Science, 3.58\"";
     String[] temData = data.split(" | ");
     String tempdata1 = Arrays.toString(temData);
@@ -40,7 +39,7 @@ public class Students{
     public static void main(String[] args) {
         Students st = new Students();
        st.add("Saka","Shola","Maths","Green","3.0");
-       st.populate();
+       //st.populate();
 
     }
      
