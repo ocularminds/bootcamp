@@ -1,4 +1,4 @@
-package ORDERINGAPP;
+package ORDERAPP;
 
 public class Items {
     private String name;

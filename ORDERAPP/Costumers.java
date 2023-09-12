@@ -1,4 +1,4 @@
-package ORDERINGAPP;
+package ORDERAPP;
 
 public class Costumers {
     private String name; 

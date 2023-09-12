@@ -1,4 +1,4 @@
-package ORDERINGAPP;
+package ORDERAPP;
 
 public class Payment {
     private String costumerName;

@@ -1,4 +1,4 @@
-package ORDERINGAPP;
+package ORDERAPP;
 
 
 /*
@@ -7,7 +7,7 @@ package ORDERINGAPP;
  * Objects - Customers, Orders, Items, Payments.
  * object has properties :name of the properties Customer - String name, Intger id, String address, String email
 
- * public class Customer { private String name; private Integer id; private String address; private String email;
+ * public class Customer { private String name; private Integer id; private String address; private String email}
  */
 
 public class App {

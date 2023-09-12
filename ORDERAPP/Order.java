@@ -1,4 +1,4 @@
-package ORDERINGAPP;
+package ORDERAPP;
 
 import java.sql.Date;
 
