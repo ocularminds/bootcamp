@@ -45,7 +45,7 @@ Polymorphism - Many, methods/functions
 
 Inheritance = Vechicle[tires:4, passengers: 2, stearing: true, speed(), reverse(), doors:2]
               Car[doors: 2]
-              SUV[trunk, doors:4]
+              Lorry[trunk, doors:4]
 
               HumanBeing - [name, gender, eyes:2, walk(), talk(), respirate()]
               Man[gender:MAN, private, mascline:true], woman
@@ -75,6 +75,59 @@ Inheritance = Vechicle[tires:4, passengers: 2, stearing: true, speed(), reverse(
     public Car(){
         this.door = 2;
     }
- }
+}
+
+Interface
+Car - reverse, accelerate, decelerate, stop, start, steer(RIGHT/LEFT)
+     [economy(120, 5, low)midSize(fuel-efficiency), 
+     sport(220, 10, high), luxury(180, 5, variable), 
+     electric(220, 20, variable), 
+     super(280, 30, high), hyper(extreem), suv(size,variable)]
+
+public interface Car {
+    void reverse();
+    void accelerate(int speed);
+    void decelerate(int speed);
+    void stop();
+    void start();
+    void steer(int direction);
+}
+
+public class EconomyCar implements Car {
+
+    private int speed;
+    private int direction;
+    private int speedGain;
+
+    public Car(){
+        this.speed = 0;
+        this.direction = 0;
+        this.speedGain = 2;
+    }
+
+    public void reverse(){
+       this.direction -= 1;
+    }
+
+    void accelerate(int speed){
+       this.speed += speedGain;
+    }
+
+    void decelerate(int speed){
+       this.speed -= speedGain;
+    }
+
+    public void stop(){
+        this.speed = 0;
+    }
+
+    public void start(){
+        this.speed = 0;
+    }
+    
+    public void steer(int direction){
+
+    }
+}
 
 

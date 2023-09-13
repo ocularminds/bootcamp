@@ -40,6 +40,28 @@ populate student records from string.
        System.out.println("First Name: "+ firstName );
        ...
     }
+    //
+    printAll(){ //printAllLoop(), printAllIterator()
+       //looping method
+       for(Map.Entry<String, List>> entry: this.students.entrySet()){
+         System.out.println("Student Number:"+ entry.getKey());
+         print(entry.getValue());
+       }
+
+       //using iterator method - import java.util.Iterator
+       Iterator<Map.Entry<K,V>> iterator = this.students.entrySet().iterator();
+       while(iterator.hasNext()){
+         Map.Entry<String, List<String>> entry = iterator.next();
+         String number = entry.getKey();
+         List<String> record = entry.getValue();
+         System.out.println("Student Number: "+ number);
+         print(record);
+       }
+    }
+    //String[] cities = {"Lagos", "London"};
+    for(String city: cities){
+        System.out.println(city);
+    }
 
     public static void main(String[] args){
         Students students = new Students();
