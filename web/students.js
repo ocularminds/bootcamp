@@ -10,7 +10,7 @@ function add(studentNumber, name, address){
 
 function printStudent(){
     for(let x = 0; x < students.length; x++){
-        console.log("Name: "+students[x].name," address: ", students[x].address);
+        console.log("Name: "+students[x].matric," address: ", students[x].address);
     }
 
     students.forEach(s => console.log("Name: "+s.name," address: ", s.address));
