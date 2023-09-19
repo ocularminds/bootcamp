@@ -1,6 +1,6 @@
 package ORDERAPP;
 
-public class Items {
+public class Item {
     private String name;
     private String category;
 

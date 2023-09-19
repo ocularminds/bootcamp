@@ -1,27 +1,28 @@
 package ORDERAPP;
 
 import java.sql.Date;
+import java.util.List;
 
 public class Order {
-    private String costumerId;
-    private int orderQuntity;
+    private Customer customer;
+    private List<Item> items;
     private Date date;
     private Integer orderQuantity;
 
-    public String getCustomerId() {
-        return costumerId;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setCustomerId(String customerId) {
-        this.costumerId = customerId;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
-    public Integer getOrderQuantity() {
-        return getOrderQuantity();
+    public List<Item> getItems() {
+        return items;
     }
 
-    public void setOrderQuantity(Integer orderQuantity) {
-        this.orderQuantity = orderQuantity;
+    public void setItems(List items) {
+        this.items = items;
     }
 
     public Date getDate() {

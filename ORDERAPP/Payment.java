@@ -1,16 +1,26 @@
 package ORDERAPP;
 
 public class Payment {
-    private String costumerName;
+    private Customer customer;
+    private Order order;
     private int amount;
+    
 
-    public String getCustomerName() {
-        return costumerName;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setCustomerName(String customerName) {
-        this.costumerName = customerName;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
+
+     public Order getOrder() {
+        return order;
+    }
+
+    public void setOder(Order order) {
+        this.order = order;
+    }    
 
     public Integer getAmount() {
         return amount;

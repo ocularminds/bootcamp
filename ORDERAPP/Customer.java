@@ -1,12 +1,11 @@
 package ORDERAPP;
 
-public class Costumers {
-    private String name; 
-    private Integer id; 
-    private String address; 
+public class Customer {
+    private String name;
+    private Integer id;
+    private String address;
     private String email;
 
-    
     public String getName() {
         return name;
     }
