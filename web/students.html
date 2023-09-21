@@ -5,5 +5,23 @@
     </head>
     <body>
         <h1>Students Database</h1>
+        <form>
+            Name: <input type="text" id="name"><br>
+            Email: <input type="text" id="email"><br>
+            Department: <input type="text" id="department"><br>
+            Faculty: <input type="text" id="faculty"><br>
+            Age: <input type="text" id="age"><br>
+            Gender: <input type="radio" name="gender" value="F">Female
+            <input type="radio" name="gender" value="M">Male<br>
+            <button type="button" id="add" onClick="addStudent()">Add Record</button>
+        </form>
+        <table border="1" cellspading="0" cellpadding="0" width="100%">
+            <thead>
+                <tr><th>Name</th><th>Email</th><th>Department</th><th>Faculty</th>
+                    <th>Age</th><th>Gender</th></tr>
+            </thead>
+            <tbody id="records">
+            </tbody>
+        </table>
     </body>
 </html>

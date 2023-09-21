@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Bootcamp Javascript Events</title>
+    </head>
+    <style>
+        body, input, button {
+            font-size: 24px;
+        }
+        .display {
+            font-size: 40px;
+            font-weight: 600;
+        }
+    </style>
+    <body>
+          <form>
+            <h1>Simple Calculator</h1>
+    
+            Name: &nbsp;<input type="text" id="name"><br>
+            Email:&nbsp;<input type="text" id="email"><br>
+            Arg 1:&nbsp;<input type="text" id="arg1" value="0" checked="false"><br>
+            Arg 2:&nbsp;<input type="text" id="arg2" value="0" checked="false"><br>
+            Ops:&nbsp;<input type="radio" name="op" value="add" checked="false">Add
+                 <input type="radio" name="op" value="substract">Subtract
+                 <input type="radio" name="op" value="multiply">Multiply<br>
+            <button type="button" id="calbutton" onClick="calculate()">Calculate</button>
+          </form> 
+          Result: <span id="display" class="display"></span>
+          <script>
+           //alert('Welcome to Calculator');
+          //let nameField = document.getElementByName("name");
+          //name.addEventListener('onBlur', e => {
+      
+          //});
+          //let emailField = document.getElementByName("email");
+      
+          function showMessage(message="This field is required"){
+             alert(message);
+          }
+
+          function isValidated(){
+            let nameField = document.getElementById("name");
+            var emailField = document.getElementById("email");
+            if(nameField === undefined || nameField.value === "" || nameField.value.trim().length  === 0){
+                alert('Your name is required!');
+                return false;
+            }
+            if(emailField === undefined || emailField.value === "" 
+                || emailField.value.trim().length  === 0
+                || emailField.value.indexOf('@') == -1){
+                alert('Your email is required!');
+                return false;
+            }
+            return true;
+          }
+      
+          function calculate(){
+            if(!isValidated()){
+                return;
+            }
+              let result;
+              let arg1Field = document.getElementById("arg1");
+              let arg2Field = document.getElementById("arg2");
+              let optionFields = document.getElementsByName("op");
+              let display = document.getElementById("display");
+              let a = parseInt(arg1Field.value);
+              let b = parseInt(arg2Field.value);
+              let op;
+              console.log('option fields', optionFields);
+              for(var i = 0; i < optionFields.length; i++){
+                if(optionFields[i].checked){
+                    op = optionFields[i].value;
+                }
+              }
+              //
+              if(op === 'add'){
+                  display.innerHTML = a+b;
+              }else if(op === 'substract'){
+                display.innerText = a-b;
+              }else{
+                  display.innerText = a*b;
+              }
+          }
+          </script>
+    </body>
+</html>

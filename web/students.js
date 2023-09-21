@@ -1,11 +1,30 @@
 let students = []; 
-let student = {id:1, matric: "1239880", address: "1, Keshinton lane"};
-students.push(student);
-students.push({id:2, matric: "1239881", address: "13, Fyrkloversgatan lane"});
-console.log('Students', students);
 
-function add(studentNumber, name, address){
-    students.push({id:3, matric: studentNumber, name, address});
+function add(name, email, department, faculty, age, gender){
+    let id = students.length + 1;
+    students.push({id, name, email, department, faculty, age, gender});
+    let data = "";
+    for(var x = 0; x < students.length; x++){
+      data = data + `<tr><td>${students[x].name}</td><td>${students[x].email}</td><td>${students[x].department}</td>
+      <td>${students[x].faculty}</td><td>${students[x].age}</td><td>${students[x].gender}</td></tr>`;
+    }
+    document.getElementById("records").innerHTML = data;
+}
+
+function addStudent(){
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let department = document.getElementById("department").value;
+    let faculty = document.getElementById("faculty").value;
+    let age = document.getElementById("age").value;
+    let genderOptions = document.getElementsByName("gender");
+    let gender;
+    for(var i = 0; i < genderOptions.length; i++){
+      if(genderOptions[i].checked){
+          gender = genderOptions[i].value;
+      }
+    }
+    add(name, email, department, faculty, age, gender);
 }
 
 function printStudent(){
@@ -15,5 +34,3 @@ function printStudent(){
 
     students.forEach(s => console.log("Name: "+s.name," address: ", s.address));
 }
-add("4566000", "Jendo", "Kokosari Avenue");
-printStudent();
