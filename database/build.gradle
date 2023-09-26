@@ -12,7 +12,14 @@ group = 'bootcamp.edu'
 version = '0.1.0'
 apply plugin: 'java'
 dependencies {
-
+    //implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
 }
-mainClassName = 'bootcamp.edu.Admissions'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+mainClassName = 'bootcamp.edu.App'
 jar.enabled = true
+jar {
+    manifest {
+        attributes 'Main-Class': 'bootcamp.edu.App'
+    }
+}

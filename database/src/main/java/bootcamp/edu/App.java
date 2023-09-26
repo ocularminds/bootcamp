@@ -1,20 +1,26 @@
 package bootcamp.edu;
 
+import bootcamp.edu.service.StudentService;
+
 public class App {
 
+    StudentService studentService;
+
     public App(){
-        System.out.println("Welcome to Admission Unit");
+        System.out.println("----------------------------------");
+        System.out.println("|   Welcome to Admission Unit     |");
+        System.out.println("----------------------------------");
+        this.studentService = new StudentService();
     }
 
-    public void admit(Student student){
-        System.out.println(student.getName()+ "admitted");
+    public void createStudents(){
+        this.studentService.createStudent("Donald Bello", "Teststore 1","Ontario", "CA");
+        this.studentService.createStudent("Tope Samson", "London Avenue 1","Ontario", "CA");
+        this.studentService.createStudent("Jake Kirk", "Teststore 23","Johnsons", "GA");
+        this.studentService.print();
     }
-
     public static void main(String[] args){
-        App admissions = new App();
-        Address address = new Address("1, Toin Street","Goteborg", "Vastra Gotaland");
-        Student student = new Student("Tester", address);
-        admissions.admit(student);
+        App app = new App();
+        app.createStudents();
     }
-    
 }
