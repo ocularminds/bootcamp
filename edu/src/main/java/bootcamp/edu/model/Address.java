@@ -1,4 +1,4 @@
-package bootcamp.edu.vao;
+package bootcamp.edu.model;
 
 public class Address {
     private int id;

@@ -46,8 +46,8 @@ populate student records from string.
        for(Map.Entry<String, List>> entry: this.students.entrySet()){
          System.out.println("Student Number:"+ entry.getKey());
          print(entry.getValue());
-       }
-
+       }              ->
+       // 3 items [0, 1, 2]->
        //using iterator method - import java.util.Iterator
        Iterator<Map.Entry<K,V>> iterator = this.students.entrySet().iterator();
        while(iterator.hasNext()){

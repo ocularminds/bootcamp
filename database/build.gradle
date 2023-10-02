@@ -11,8 +11,12 @@ plugins {
 group = 'bootcamp.edu'
 version = '0.1.0'
 apply plugin: 'java'
+repositories{
+    mavenCentral();
+    maven {url "https://repo.maven.apache.org/maven2"}
+}
 dependencies {
-    //implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8

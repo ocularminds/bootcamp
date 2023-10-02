@@ -1,0 +1,29 @@
+
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'org.springframework.boot' version '2.7.2'
+}
+group = 'bootcamp.edu'
+version = '1.0'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'io.spring.dependency-management'
+repositories{
+    mavenCentral();
+    maven {url "https://repo.maven.apache.org/maven2"}
+}
+dependencies {
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+}
+sourceCompatibility = 11.0
+targetCompatibility = 11.0
+//mainClassName = 'bootcamp.edu.App'
+jar.enabled = true
+jar {
+    manifest {
+        attributes 'Main-Class': 'bootcamp.edu.App'
+    }
+}

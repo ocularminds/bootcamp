@@ -1,0 +1,20 @@
+JDBC - Java Database Connectivity
+- Load driver Class.forName("bootcamp.edu.App")
+- Connection
+- Statement, PrepareStatement
+- execute
+- ResultSet ->  iterate through the result
+- close connection
+
+ORDER BY 
+
+SQL Injection
+
+public class Db {
+
+   Coonection connect(url, username, password);
+
+   close(Connection connection)
+
+
+}
