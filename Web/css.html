@@ -3,23 +3,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Bootcamp</title>
+    <style>
+      .subscribe {
+          background-color: black; 
+          color: beige; 
+          border-radius:7px; 
+          height:30px; 
+          width: 180;
+      }
+
+      p {
+        background-color: #CCCCCC;
+        border-radius: 5px;
+      }
+
+      .youtube {
+        background-color: rgb(225, 24, 24);
+        color: white;
+        border-radius: 7px; 
+        height:30px; 
+        width: 35
+      }
+    </style>
+
   </head>
   <body>
     <h2>Unlocking Your Coding Superpowers:Day 13 of the Code Hero journey.</h2>
 
-    <button style="background-color: black; color: beige; border-radius:7px; height:30px; width: 80">
-      Subscribe
-    </button>
+    <button class="subscribe">Subscribe</button>
     <button>Share</button>
     <button>Clip</button>
     <button>Save</button>
-    <button
-      style="
-        background-color: rgb(225, 24, 24);
-        color: white;
-        border-radius: 7px; height:30px; width: 35"
-    >
-     <b>|></b></button><b style ="font-size: 28px">YouTube &trade;</b>
+    <button class="youtube"><b>|></b></button><b style ="font-size: 28px">YouTube &trade;</b>
 
     <p>
       <b>Watching now. Started 20min ago.
@@ -34,6 +49,7 @@
     <form>
         <input type="text" name="message" style="font-size: 18; font-family:Courier New;">&nbsp
         <button style="height: 25;">Send</button>
+        <button class="subscribe">Second subscription button</button>
     </form>
   </body>
 </html>
