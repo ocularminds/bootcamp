@@ -1,0 +1,1 @@
+curl  --header "Content-Type: application/json" --request POST --data '{"name":"Dino Jamiu","address":{"street":"Venture Estate","city":"Lagos","state":"LA"}}' http://localhost:8080/students

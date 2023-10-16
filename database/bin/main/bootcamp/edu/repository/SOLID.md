@@ -13,6 +13,11 @@ MQ -> Message Queue -> subscribe ,create a queue/topic
 
 Backend Structure
 - Configuration [database connection, email, etc]
-- Repository {interface to backeend dependencies: daatabase, email server, mq server, file system}
+- Repository {interface to backend dependencies: daatabase, email server, mq server, file system}
 - Services {coordinated data that needs to be sent to or from backend servers}
 - Controllers {is reponsible for data collection from frontend and pass to service to and fro}
+
+- Spring Jdbc - libraries for database operation - JdbcTemplate
+- Spring Web - Web services, Data collection from the web or response to the web
+- Spring JPA - Java Persistence Annotation -> Auto generated SQL queries
+- email, soa, security,

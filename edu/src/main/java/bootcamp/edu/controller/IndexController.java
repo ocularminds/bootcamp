@@ -3,7 +3,9 @@ package bootcamp.edu.controller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController
+@RestController 
+//SUCCESS(200), CREATED(201), ERROR(500), NOT_FOUND(404), BUSY(...), MOVED(301) 
+// (MVC Model-View-Controller)
 public class IndexController {
 
     public IndexController(){
@@ -17,7 +19,7 @@ public class IndexController {
 
     @RequestMapping("/watch")
     public String watch(){
-        return "Unlocking Your Coding Powers: Day 20 of Code Hero Journey";
+        return "Unlocking Your Coding Powers: Demystifying SpringBoot";
     }
     
 }

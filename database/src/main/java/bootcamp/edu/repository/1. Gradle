@@ -1,7 +1,57 @@
-1. Gradle
-2. Database
-3. SQL
-4. CRUDE
+SpringBoot
+--------------
 
-gradle
-Database src java bootcamp edu 
+JDBC - Java Database Connectivity
+Connnection, Statement, PreparedStatement, ResultSet
+
+
+Springboot = Collection of Springframeworks for boostraping enterprise application
+Spring JPA - Java Persistence - CRUDE (create, read, update, delete) of data in database
+Spring AOP - Aspect Oriented Programing. After effects, after process.
+Spring Web - Creates a web server for serving/processing documents
+Spring Templates(Jdbc, JMS) Jms - Java Messaging Service
+
+@Configuration - Setup initial parameters for app to work
+@Repository - Connects to actual database
+@Service -    Business Logic codes
+@Controller - API endpoints Interface(Application Programming Interface)
+
+Annotation - informational, compile-time, runtime processing
+
+Lombok
+@Getter
+@Setter
+private String address;
+
+/**
+* Entry class for order management solution
+*
+* @author Baba.Festi
+*/
+@SupressWarning('NullPointerException')
+@SpringBootApplication
+class App
+ 
+Path - Protocol + Address + Path + additional details google.com/search?q=what is Annotation
+ - Endpoint is a resource URL. https://www.youtube.com/watch?v=t86H8EkHodo,  http://localhost:8080/students/1/courses/101
+ - protocol: defines type of address url: http, ftp, git:
+Web server address - www.youtube.com, IP: 142.250.74.174
+/watch - Path
+? Query
+http://localhost:8080/students/1
+protocol http
+address: localhost:8080
+/students
+1. Query parameter
+2. Path parameter
+https://www.google.com/search?q=noun&language=en
+REST- Verbs
+CRUDE
+Create - POST
+Read - GET
+Delete - DELETE
+Update - PUT
+Get with data: HEAD
+Http Verbs: GET, POST, HEAD, PUT, DELETE
+REST: Respresentational State Transfer
+Http Status: staus GET,PUT: 200, POST 201, 300, 401, 403, 500

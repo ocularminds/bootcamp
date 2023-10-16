@@ -6,10 +6,12 @@ import bootcamp.edu.vao.Address;
 import bootcamp.edu.vao.Student;
 import bootcamp.edu.repository.StudentRepository;
 
+//@Service
 public class StudentService {
     private final StudentRepository students;
 
-    public StudentService(final Db db){
+    public StudentService(){
+        final Db db = new Db();
         this.students = new StudentRepository(db);
     }
 
